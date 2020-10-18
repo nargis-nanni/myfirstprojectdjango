@@ -1,4 +1,8 @@
 from django.shortcuts import render
 
 def home(request):
-	return render(request, 'happy.html')
+	n='nargis'
+	a='angy'
+	k='kajal'
+	x=[n,a,k]
+	return render(request, 'happy.html', {'b':x})

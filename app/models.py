@@ -4,5 +4,5 @@ from django.db import models
 
 
 class Blog(models.Model):
-	title = models.CharField(max_length = 20)
-	text = models.TextField()
+	title = models.CharField(max_length=20)
+	description = models.TextField()
