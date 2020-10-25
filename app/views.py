@@ -1,8 +1,16 @@
 from django.shortcuts import render
-
+from app.models import Blog
+from app.forms import  BlogForm
 def home(request):
-	n='nargis'
+	form = BlogForm()
+	
+
+	
+	all_blog = Blog.objects.all()
+
 	a='angy'
 	k='kajal'
-	x=[n,a,k]
-	return render(request, 'happy.html', {'b':x})
+	x=[a,k]
+	return render(request, 'happy.html', {'form':form})
+
+

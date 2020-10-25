@@ -1,11 +1,15 @@
-{%load static %}
+{% load static %}
 <html>
-<body>
-	{% for i in b %}
-		<h1>hello {{ i }} </h1>
+	<body>
+		<form method="post">
+			{% csrf_token %}
+			{{ form }}
+
+	</form>
+	</body>
+</html>		
 
 
-	{% endfor %}	
 	
-</body>
-</html>
+	
+	
