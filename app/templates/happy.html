@@ -4,12 +4,15 @@
 		<form method="post">
 			{% csrf_token %}
 			{{ form }}
-
-	</form>
+			<button type="submit">create</button>
+		</form>
+		{% for i in blogs %}
+			{{ i.title }}<br>
+		{% endfor %}
 	</body>
 </html>		
 
 
 	
 	
-	
+	                                 
