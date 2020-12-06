@@ -1,15 +1,29 @@
 {% load static %}
 <html>
+<head> 
+<link rel="stylesheet" href="{% static 'page.css' %}">
+
+ </head>
+
 	<body>
+		<div class="nargis">
+			<p>hello, always be happy</p>
+
 		<form method="post">
 			{% csrf_token %}
+			
 			{{ form }}
-			<button type="submit">create</button>
+		
+			<button type="submit">
+
+			create</button>
 		</form>
+
 		{% for i in blogs %}
 			{{ i.title }}<br>
 		{% endfor %}
 	</body>
+
 </html>		
 
 

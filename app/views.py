@@ -15,6 +15,4 @@ def home(request):
 	a='angy'
 	k='kajal'
 	x=[a,k]
-	return render(request, 'happy.html', {'form':form,'blogs':all_blog})
-
-
+	return render(request, 'happy.html', {'form':form,'blogs':all_blog}) 
