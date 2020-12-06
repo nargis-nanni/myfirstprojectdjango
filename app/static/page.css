@@ -1,6 +1,11 @@
 button{
-	background-color:#D0F0C0 ;
+	background-color: #D0F0C0 ;
 }
 input, textarea{
-	background:grey;
+	background: #e2e0e0 ;
+	width: 100%;
+}
+
+form{
+	display: inline-block;
 }

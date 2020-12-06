@@ -12,7 +12,4 @@ def home(request):
 			form.save()
 	all_blog = Blog.objects.all()
 
-	a='angy'
-	k='kajal'
-	x=[a,k]
 	return render(request, 'happy.html', {'form':form,'blogs':all_blog}) 
