@@ -6,22 +6,11 @@
  </head>
 
 	<body>
-		<div class="nargis">
-			<p>hello, always be happy</p>
+		  {% for blog in blogs %}
+		  		 <a href="https://www.google.com"> {{blog.title}} </a> 
 
-		<form method="post">
-			{% csrf_token %}
-			
-			{{ form }}
+		  {% endfor %}
 		
-			<button type="submit">
-
-			create</button>
-		</form>
-
-		{% for i in blogs %}
-			{{ i.title }}<br>
-		{% endfor %}
 	</body>
 
 </html>		

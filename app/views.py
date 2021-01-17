@@ -3,13 +3,13 @@ from app.models import Blog
 from app.forms import  BlogForm
 	
 def home(request):
+	blog = Blog.objects.all()
+
+	return render(request, 'happy.html',  {'blogs': blog}
+)
+
 	
-	form = BlogForm()	
 
-	if request.method == 'POST':
-		form = BlogForm(request.POST)
-		if form.is_valid():
-			form.save()
-	all_blog = Blog.objects.all()
+	
 
-	return render(request, 'happy.html', {'form':form,'blogs':all_blog}) 
+  

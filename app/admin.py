@@ -5,3 +5,5 @@ class BlogAdmin(admin.ModelAdmin):
 	class Meta:
 		model=Blog
 		fields='__all__'
+
+admin.site.register(Blog, BlogAdmin)
